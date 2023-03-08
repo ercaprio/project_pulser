@@ -63,7 +63,7 @@
             font-size: 16px;
             font-weight: 700;
             text-align: center;
-            color: #0d0d0d;
+            color: $second-color;
         }
         &__descr{
             margin-top: 16px;
@@ -102,7 +102,7 @@
             text-decoration: line-through;
         }
         &__new-price{
-            color: #050505;
+            color: $second-color;
             font-weight: 700;
             font-size: 20px;
         }

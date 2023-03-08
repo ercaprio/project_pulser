@@ -4,6 +4,10 @@
         width: 750px;
         margin: 0 auto;
         position: relative;
+        img{
+            display: block;
+            width: 100%;
+        }
     }
     .slick-prev, .slick-next {
         position: absolute;

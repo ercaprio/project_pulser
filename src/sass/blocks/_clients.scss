@@ -1,41 +1,42 @@
-.clients{
-    min-height: -950px;
+.clients {
+    min-height: 950px;
     padding-bottom: 71px;
-    span{
+    span {
         display: block;
         width: 100%;
         height: 1px;
         background-color: #f6f6f6;
         margin: 50px 0;
     }
-    &-item{
+    &-item {
         width: 100%;
         display: flex;
-        &__img{
+        &__img {
+            display: block;
             width: 169px;
             height: 169px;
         }
-        &__text-wrapper{
+        &__text-wrapper {
             margin-left: 60px;
         }
-        &__title{
+        &__title {
             font-size: 18px;
             font-weight: 700;
             text-align: left;
-            color: #0d0d0d;
+            color: $second-color;
         }
-        &__subtitle{
+        &__subtitle {
             font-size: 14px;
             font-weight: 300;
             text-align: left;
             color: #646464;
             margin-top: 10px;
         }
-        &__descr{
+        &__descr {
             font-size: 16px;
             font-weight: 300;
             text-align: left;
-            color: #0d0d0d;
+            color: $second-color;
             margin-top: 19px;
         }
     }
