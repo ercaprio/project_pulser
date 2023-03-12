@@ -137,7 +137,10 @@
         width: 250px;
         input {
             height: 45px;
-            font-size: 12px;
+            font-size: 13px;
+        }
+        label.error {
+            font-size: 13px;
         }
     }
 
@@ -360,7 +363,10 @@
         width: 280px;
         input{
             height: 45px;
-            font-size: 13px;
+            font-size: 12px;
+        }
+        label.error {
+            font-size: 12px;
         }
     }
 
