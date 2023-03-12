@@ -1,4 +1,7 @@
-@media (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container {
+        width: 800px;
+    }
     .header{
         &__logo {
             width: 200px;
@@ -14,6 +17,22 @@
     .title {
         &_left {
             font-size: 34px;
+        }
+    }
+
+    .carousel {
+        &__inner {
+            width: 600px;
+        }
+    }
+
+    .catalog {
+        &__content {
+            justify-content: center;
+        }
+        &-item {
+            margin-right: 10px;
+            margin-left: 10px;
         }
     }
 }
@@ -43,6 +62,13 @@
         width: 135px;
         height: 27px;
         font-size: 10px;
+        &:hover {
+            border: none;
+            background-color: $main-color;
+            color: #fff;
+            box-shadow: none;
+            transform: none;
+        }
         &_main {
             width: 270px;
             height: 45px;
@@ -231,6 +257,28 @@
             font-size: 22px;
         }
     }
+
+    .modal {
+        width: 340px;
+        &__subtitle {
+            font-size: 17px;
+        }
+        &__descr {
+            font-size: 13px;
+            margin-top: 10px;
+        }
+        .feed-form {
+            margin: 0 auto;
+            margin-top: 25px;
+            input {
+                font-size: 13px;
+            }
+            .button_submit {
+                font-size: 13px;
+                line-height: 13px;
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -380,6 +428,30 @@
             font-size: 20px;
         }
     }
+
+    .modal {
+        width: 300px;
+        min-height: 300px;
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+        .feed-form {
+            width: 220px;
+            margin-top: 20px;
+            input {
+                font-size: 12px;
+                height: 40px;
+            }
+            .button_submit {
+                height: 40px;
+                font-size: 12px;
+                line-height: 12px;
+            }
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -498,6 +570,19 @@
         }
         &__address, &__phone {
             margin-bottom: 30px;
+        }
+    }
+
+    .modal {
+        &__close {
+            top: 10px;
+            right: 10px;
+            font-size: 31px;
+        }
+        .feed-form {
+            .button_submit {
+                width: 100%;
+            }
         }
     }
 }
