@@ -94,7 +94,7 @@ $(document).ready(function(){
 	//Phone maskedinput
 	$('input[name=phone]').mask("+7 (999) 999-99-99");
 
-
+	//smart.php
 	$('form').submit(function(e) {
         e.preventDefault();
         $.ajax({
@@ -110,4 +110,21 @@ $(document).ready(function(){
         });
         return false;
     });
+
+	//Pageup
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 1600) {
+			$('.pageup').fadeIn();
+		} else {
+			$('.pageup').fadeOut();
+		}
+	});
+
+	//Smooth scroll
+	$("a[href=#up]").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
+	
 }); 
