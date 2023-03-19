@@ -591,7 +591,15 @@
             }
         }
         &_mini {
+            display: none;
             min-height: 140px;
         }
+    }
+
+    .pageup {
+        right: 20px;
+        bottom: 20px;
+        width: 30px;
+        height: 30px;
     }
 }

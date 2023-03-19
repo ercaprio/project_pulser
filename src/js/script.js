@@ -127,4 +127,6 @@ $(document).ready(function(){
         return false;
     });
 	
+	//wow.js
+	new WOW().init();
 }); 
